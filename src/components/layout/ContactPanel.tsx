@@ -15,7 +15,6 @@ function formatPhone(raw: string): string {
 function ContactFormFields() {
   const [state, setState] = useState<SubmitState>("idle");
   const [agreed, setAgreed] = useState(false);
-  const [privacyOpen, setPrivacyOpen] = useState(false);
   const [phone, setPhone] = useState("");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -112,35 +111,39 @@ function ContactFormFields() {
 
       {/* 개인정보 수집동의 */}
       <div className="border border-line p-3">
-        <div className="flex items-center justify-between gap-2">
-          <label className="flex items-center gap-2.5 cursor-pointer">
-            <input
-              type="checkbox"
-              required
-              checked={agreed}
-              onChange={(e) => setAgreed(e.target.checked)}
-              className="accent-gold shrink-0"
-            />
-            <span className="text-ivory text-sm">개인정보 수집동의 (필수)</span>
-          </label>
-          <button
-            type="button"
-            onClick={() => setPrivacyOpen((v) => !v)}
-            className="text-xs text-stone/60 hover:text-stone transition-colors shrink-0 underline underline-offset-2"
-            aria-expanded={privacyOpen}
-          >
-            {privacyOpen ? "접기" : "자세히"}
-          </button>
+        <label className="flex items-center gap-2.5 cursor-pointer">
+          <input
+            type="checkbox"
+            required
+            checked={agreed}
+            onChange={(e) => setAgreed(e.target.checked)}
+            className="accent-gold shrink-0"
+          />
+          <span className="text-ivory text-sm">개인정보 수집동의 (필수)</span>
+        </label>
+        <div className="mt-2.5 h-[110px] overflow-y-auto bg-black/20 border border-white/[0.06] p-2.5 space-y-1.5 text-xs text-stone/70 leading-relaxed">
+          <p className="font-medium text-stone/90">개인정보 수집 및 이용 동의</p>
+          <p>
+            1. 개인정보의 수집 및 이용 목적<br />
+            본 홈페이지는 고객님의 문의사항에 대한 답변 및 안내를 위하여 필요한 최소한의 범위 내에서 개인정보를 수집하고 있습니다.
+          </p>
+          <p>
+            2. 수집하는 개인정보의 항목<br />
+            · 필수항목 : 이름, 연락처, 생년월일, 문의사항<br />
+            · 수집방법 : 웹사이트에 고객이 직접 입력
+          </p>
+          <p>
+            3. 개인정보의 처리 및 보유기간<br />
+            본 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br />
+            · 보존 항목 : 이름, 연락처, 생년월일, 문의사항<br />
+            · 보존 근거 : 소비자의 불만 또는 분쟁처리에 관한 기록 (전자상거래 등에서의 소비자보호에 관한 법률)<br />
+            · 보존 기간 : 3년
+          </p>
+          <p>
+            4. 부동의에 따른 고지사항<br />
+            위 개인정보 제공에 대해서 부동의할 수 있으나, 이 경우 게시판의 내용 입력을 할 수 없어 관심고객 등록이 불가능합니다.
+          </p>
         </div>
-
-        {privacyOpen && (
-          <ul className="mt-2.5 space-y-0.5 text-xs text-stone/70 leading-snug">
-            <li>1. 수집/이용 목적: 고객요청 처리 및 결과 회신</li>
-            <li>2. 수집 항목: 이름, 연락처, 생년월일</li>
-            <li>3. 보유 기간: 처리 완료 후 3개월</li>
-            <li>4. 동의 거부 가능, 거부 시 상담 신청 제한될 수 있음</li>
-          </ul>
-        )}
       </div>
 
       <button

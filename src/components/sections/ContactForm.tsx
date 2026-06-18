@@ -101,22 +101,39 @@ export function ContactForm() {
           </div>
 
           {/* 개인정보 수집동의 */}
-          <div className="border border-line p-5 text-base text-stone leading-relaxed">
+          <div className="border border-line p-5">
             <label className="flex items-start gap-3 cursor-pointer">
               <input
                 type="checkbox"
                 required
                 checked={agreed}
                 onChange={(e) => setAgreed(e.target.checked)}
-                className="mt-1 accent-gold"
+                className="mt-0.5 accent-gold shrink-0"
               />
-              <span className="text-ivory">개인정보 수집동의 (필수)</span>
+              <span className="text-ivory text-base">개인정보 수집동의 (필수)</span>
             </label>
-            <div className="mt-3 space-y-1 text-sm text-stone/80">
-              <p>1. 수집/이용 목적: 예약, 문의 등 고객요청 처리 및 결과 회신</p>
-              <p>2. 수집하는 항목: 이름, 연락처, 생년월일</p>
-              <p>3. 보유/이용 기간: 고객요청 처리 후 3개월</p>
-              <p>4. 동의를 거부할 수 있으며, 거부 시 상담 신청이 제한될 수 있습니다.</p>
+            <div className="mt-3 h-[120px] overflow-y-auto bg-black/20 border border-white/[0.06] p-3 space-y-2 text-xs text-stone/70 leading-relaxed">
+              <p className="font-medium text-stone/90">개인정보 수집 및 이용 동의</p>
+              <p>
+                1. 개인정보의 수집 및 이용 목적<br />
+                본 홈페이지는 고객님의 문의사항에 대한 답변 및 안내를 위하여 필요한 최소한의 범위 내에서 개인정보를 수집하고 있습니다.
+              </p>
+              <p>
+                2. 수집하는 개인정보의 항목<br />
+                · 필수항목 : 이름, 연락처, 생년월일, 문의사항<br />
+                · 수집방법 : 웹사이트에 고객이 직접 입력
+              </p>
+              <p>
+                3. 개인정보의 처리 및 보유기간<br />
+                본 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br />
+                · 보존 항목 : 이름, 연락처, 생년월일, 문의사항<br />
+                · 보존 근거 : 소비자의 불만 또는 분쟁처리에 관한 기록 (전자상거래 등에서의 소비자보호에 관한 법률)<br />
+                · 보존 기간 : 3년
+              </p>
+              <p>
+                4. 부동의에 따른 고지사항<br />
+                위 개인정보 제공에 대해서 부동의할 수 있으나, 이 경우 게시판의 내용 입력을 할 수 없어 관심고객 등록이 불가능합니다.
+              </p>
             </div>
           </div>
 
