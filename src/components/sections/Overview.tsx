@@ -31,14 +31,14 @@ export function Overview() {
 
         {/* 특장점 — 4개, 번호는 실제 순번 정보를 담고 있진 않으므로 단순 인덱스 라벨로 사용 */}
         <div className="mt-24">
-          <h3 className="text-display text-3xl font-bold text-charcoal mb-10">
+          <h3 className="text-display text-xl sm:text-2xl lg:text-3xl font-bold text-charcoal mb-8 sm:mb-10">
             왜 {`상동역 롯데캐슬`}인가
           </h3>
           <div className="grid sm:grid-cols-2 gap-px bg-charcoal/10">
             {highlights.map((h) => (
               <div key={h.number} className="bg-ivory p-8 sm:p-10">
                 <span className="tnum text-base text-gold">{h.number}</span>
-                <h4 className="text-display mt-3 text-2xl font-bold text-charcoal">
+                <h4 className="text-display mt-3 text-lg sm:text-xl lg:text-2xl font-bold text-charcoal">
                   {h.title}
                 </h4>
                 <p className="mt-3 text-base sm:text-lg text-charcoal/65 leading-relaxed">
