@@ -19,6 +19,8 @@ export const projectInfo = {
   totalUnits: "총 1,859세대",
   businessType: "개발사업",
   saleDate: "2026년 07월 예정",
+  saleDateShort: "2026.07",   // 히어로 섹션 스펙 표시용
+  scaleShort: "B8~49F",       // 히어로 섹션 스펙 표시용
   moveInDate: "추후 공개",
   parking: "3,455대 (법정 2,732대)",
   totalFloorArea: "약 46만 5,992㎡",

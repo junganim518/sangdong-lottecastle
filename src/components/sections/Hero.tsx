@@ -57,7 +57,7 @@ export function Hero() {
         <dl className="mt-12 sm:mt-16 grid grid-cols-3 gap-6 sm:gap-10 border-t border-white/20 pt-6 sm:pt-8">
           <div className="flex flex-col items-start">
             <dt className="text-xs text-stone tracking-wide">규모</dt>
-            <dd className="tnum mt-1 text-xl sm:text-2xl text-gold-soft">49F</dd>
+            <dd className="tnum mt-1 text-xl sm:text-2xl text-gold-soft">{projectInfo.scaleShort}</dd>
           </div>
           <div className="flex flex-col items-start">
             <dt className="text-xs text-stone tracking-wide">세대수</dt>
@@ -65,7 +65,7 @@ export function Hero() {
           </div>
           <div className="flex flex-col items-start">
             <dt className="text-xs text-stone tracking-wide">분양</dt>
-            <dd className="tnum mt-1 text-xl sm:text-2xl text-gold-soft">2026</dd>
+            <dd className="tnum mt-1 text-xl sm:text-2xl text-gold-soft">{projectInfo.saleDateShort}</dd>
           </div>
         </dl>
       </div>
