@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "상동역 롯데캐슬 | 부천 상동 7호선 초역세권 아파트",
   description:
     "경기도 부천시 원미구 상동, 7호선 상동역 초역세권. 지하 8층~지상 49층 7개동, 아파트 1,859세대. 2026년 07월 분양 예정.",
+  other: {
+    "naver-site-verification": "07aca4a4aae11cb06eb9dca308f6e0b116e31d38",
+  },
 };
 
 export default function RootLayout({
