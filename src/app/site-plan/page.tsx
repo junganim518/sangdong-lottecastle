@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "단지배치도 | 상동역 롯데캐슬",
+  title: "단지배치도 | 상동역 롯데캐슬 시그니처",
 };
 
 export default function SitePlanPage() {

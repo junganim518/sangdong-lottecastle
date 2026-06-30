@@ -12,7 +12,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/hero-main.jpg"
-          alt="상동역 롯데캐슬 단지 조감도"
+          alt="상동역 롯데캐슬 시그니처 단지 조감도"
           fill
           priority
           sizes="100vw"

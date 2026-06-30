@@ -8,8 +8,8 @@
  */
 
 export const projectInfo = {
-  name: "상동역 롯데캐슬",
-  shortName: "상동역 롯데캐슬",
+  name: "상동역 롯데캐슬 시그니처",
+  shortName: "상동역 롯데캐슬 시그니처",
   tagline: "7호선 초역세권, 부천의 새로운 랜드마크",
   subTagline: "아파트 1,859세대로 구성된 대단지 시그니처",
   location: "경기도 부천시 원미구 상동 540-1번지",

@@ -26,7 +26,7 @@ export function Location() {
             <div className="relative w-full aspect-[16/7] border border-line overflow-hidden shadow-lg">
               <Image
                 src="/images/location-map.png"
-                alt="상동역 롯데캐슬 단지 위치 지도"
+                alt="상동역 롯데캐슬 시그니처 단지 위치 지도"
                 fill
                 sizes="(min-width: 1280px) 1200px, 100vw"
                 className="object-cover object-center"

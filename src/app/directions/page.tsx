@@ -4,7 +4,7 @@ import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { contactInfo, locationInfo } from "@/data/project";
 
 export const metadata: Metadata = {
-  title: "오시는길 | 상동역 롯데캐슬",
+  title: "오시는길 | 상동역 롯데캐슬 시그니처",
 };
 
 const infoItems = [

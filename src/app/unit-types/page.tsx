@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { UnitTypes } from "@/components/sections/UnitTypes";
 
 export const metadata: Metadata = {
-  title: "평면타입 | 상동역 롯데캐슬",
+  title: "평면타입 | 상동역 롯데캐슬 시그니처",
 };
 
 export default function UnitTypesPage() {
