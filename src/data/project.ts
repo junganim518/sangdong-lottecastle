@@ -12,7 +12,7 @@ export const projectInfo = {
   shortName: "상동역 롯데캐슬 시그니처",
   tagline: "7호선 초역세권, 부천의 새로운 랜드마크",
   subTagline: "아파트 1,859세대로 구성된 대단지 시그니처",
-  location: "경기도 부천시 원미구 상동 540-1번지",
+  location: "경기도 부천시 원미구 상동 540-1번지 (구 홈플러스 부지)",
   developer: "주식회사 미래도시",
   constructor: "롯데건설",
   scale: "지하 8층 ~ 지상 49층, 7개동",

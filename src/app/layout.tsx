@@ -18,9 +18,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "상동역 롯데캐슬 시그니처 | 부천 상동 7호선 초역세권 아파트",
+  title: "상동역 롯데캐슬 시그니처 | 구 상동 홈플러스 부지, 7호선 초역세권 분양",
   description:
-    "경기도 부천시 원미구 상동, 7호선 상동역 초역세권. 지하 8층~지상 49층 7개동, 아파트 1,859세대. 2026년 07월 분양 예정.",
+    "경기도 부천시 원미구 상동(구 홈플러스 부지)에 들어서는 상동역 롯데캐슬 시그니처. 7호선 상동역 초역세권, 지하 8층~지상 49층, 총 1,859세대 규모로 선보입니다.",
   other: {
     "naver-site-verification": "07aca4a4aae11cb06eb9dca308f6e0b116e31d38",
     "google-site-verification": "Dqc_bho2yjLlYARZX4nnQWhqyJGje8qr2Fd2mVxZpS8",
