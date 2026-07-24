@@ -22,7 +22,10 @@ export const metadata: Metadata = {
   description:
     "경기도 부천시 원미구 상동(구 홈플러스 부지)에 들어서는 상동역 롯데캐슬 시그니처. 7호선 상동역 초역세권, 지하 8층~지상 49층, 총 1,859세대 규모로 선보입니다.",
   other: {
-    "naver-site-verification": "07aca4a4aae11cb06eb9dca308f6e0b116e31d38",
+    "naver-site-verification": [
+      "07aca4a4aae11cb06eb9dca308f6e0b116e31d38",
+      "44c1e5fb95c0977a6fd28170eff118561221d369",
+    ],
     "google-site-verification": "Dqc_bho2yjLlYARZX4nnQWhqyJGje8qr2Fd2mVxZpS8",
   },
 };
