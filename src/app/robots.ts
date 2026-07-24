@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sangdonglottecastle.co.kr/sitemap.xml",
+    sitemap: "https://www.sangdonglottecastle.co.kr/sitemap.xml",
   };
 }
