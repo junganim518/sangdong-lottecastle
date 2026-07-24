@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import { contactInfo, locationInfo } from "@/data/project";
+import { contactInfo } from "@/data/project";
+
+const transitPoints = [
+  { label: "7호선", desc: "상동역 도보 1분 (초역세권)" },
+  { label: "버스", desc: "단지 인근 버스정류장 다수" },
+  { label: "차량", desc: "경인고속도로 / 외곽순환도로 접근 용이" },
+];
+
+const amenityPoints = [
+  { label: "쇼핑", desc: "현대백화점 중동점, 이마트 중동점, 뉴코아아울렛 인근" },
+  { label: "교육", desc: "단지 인근 초/중/고 학군" },
+  { label: "공원", desc: "상동호수공원 생활권" },
+];
 
 export const metadata: Metadata = {
   title: "오시는길 | 상동역 롯데캐슬 시그니처",
@@ -84,7 +96,7 @@ export default function DirectionsPage() {
                 대중교통
               </h3>
               <ul className="space-y-4">
-                {locationInfo.transitPoints.map((p) => (
+                {transitPoints.map((p) => (
                   <li
                     key={p.label}
                     className="flex gap-4 border-b border-charcoal/10 pb-4"
@@ -105,7 +117,7 @@ export default function DirectionsPage() {
                 주변 인프라
               </h3>
               <ul className="space-y-4">
-                {locationInfo.amenityPoints.map((p) => (
+                {amenityPoints.map((p) => (
                   <li
                     key={p.label}
                     className="flex gap-4 border-b border-charcoal/10 pb-4"

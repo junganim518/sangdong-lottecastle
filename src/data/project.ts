@@ -92,20 +92,9 @@ export const apartmentUnitTypes: UnitType[] = [
   { id: "apt-187p", typeName: "187P", exclusiveArea: "약 187㎡", supplyArea: TBD, rooms: TBD, units: "1세대",  isPenthouse: true, imageSrc: null },
 ];
 
-// 위치/입지 — 지도 좌표는 추후 실제 위/경도로 교체
+// 위치/입지
 export const locationInfo = {
   address: projectInfo.location,
-  mapEmbedSrc: null as string | null, // 카카오/네이버 지도 embed URL — 추후 교체
-  transitPoints: [
-    { label: "7호선", desc: "상동역 도보 1분 (초역세권)" },
-    { label: "버스", desc: "단지 인근 버스정류장 다수" },
-    { label: "차량", desc: "경인고속도로 / 외곽순환도로 접근 용이" },
-  ],
-  amenityPoints: [
-    { label: "쇼핑", desc: "현대백화점 중동점, 이마트 중동점, 뉴코아아울렛 인근" },
-    { label: "교육", desc: "단지 인근 초/중/고 학군" },
-    { label: "공원", desc: "상동호수공원 생활권" },
-  ],
 };
 
 // 갤러리/조감도 이미지 — 전부 placeholder, 추후 실제 이미지로 교체
