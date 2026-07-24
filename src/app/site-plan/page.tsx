@@ -14,8 +14,20 @@ export default function SitePlanPage() {
           <SectionHeading
             eyebrow="Site Plan"
             title="단지구성"
-            description="단지 전체의 동 배치 및 조경 계획을 확인하세요."
+            description="단지 배치도와 커뮤니티 시설을 확인하세요."
           />
+
+          <div className="mt-14">
+            <Image
+              src="/images/site-plan.png"
+              alt="상동역 롯데캐슬 시그니처 단지배치도"
+              width={2428}
+              height={1562}
+              sizes="100vw"
+              className="w-full h-auto"
+              priority
+            />
+          </div>
 
           <div className="mt-14">
             <Image
@@ -25,28 +37,7 @@ export default function SitePlanPage() {
               height={3479}
               sizes="100vw"
               className="w-full h-auto"
-              priority
             />
-          </div>
-
-          <div className="mt-10 grid sm:grid-cols-2 gap-px bg-charcoal/10">
-            <div className="bg-ivory p-8">
-              <p className="text-sm tracking-eyebrow uppercase text-gold mb-3">
-                동 배치
-              </p>
-              <p className="text-base text-charcoal/70 leading-relaxed">
-                각 동의 배치와 동선 계획은 추후 확정 배치도로 업데이트될 예정입니다.
-              </p>
-            </div>
-            <div className="bg-ivory p-8">
-              <p className="text-sm tracking-eyebrow uppercase text-gold mb-3">
-                조경 계획
-              </p>
-              <p className="text-base text-charcoal/70 leading-relaxed">
-                단지 중앙 커뮤니티 공원 및 지하화 주차장 상부 조경으로
-                쾌적한 보행 환경을 조성합니다.
-              </p>
-            </div>
           </div>
         </div>
       </section>
