@@ -8,7 +8,7 @@ import { projectInfo } from "@/data/project";
 const navItems = [
   { label: "사업개요", href: "/overview" },
   { label: "입지안내", href: "/location" },
-  { label: "단지배치도", href: "/site-plan" },
+  { label: "단지구성", href: "/site-plan" },
   { label: "평면타입", href: "/unit-types" },
   { label: "오시는길", href: "/directions" },
 ];

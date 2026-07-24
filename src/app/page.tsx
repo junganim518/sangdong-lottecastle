@@ -16,7 +16,7 @@ const quickLinks = [
   },
   {
     num: "03",
-    title: "단지배치도",
+    title: "단지구성",
     href: "/site-plan",
     desc: "단지 배치 및 조경 계획",
   },

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "단지배치도 | 상동역 롯데캐슬 시그니처",
+  title: "단지구성 | 상동역 롯데캐슬 시그니처",
 };
 
 export default function SitePlanPage() {
@@ -13,14 +13,19 @@ export default function SitePlanPage() {
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
           <SectionHeading
             eyebrow="Site Plan"
-            title="단지배치도"
-            description="단지 전체의 동 배치 및 조경 계획을 확인하세요. 추후 실제 배치도 이미지로 교체됩니다."
+            title="단지구성"
+            description="단지 전체의 동 배치 및 조경 계획을 확인하세요."
           />
 
           <div className="mt-14">
-            <ImagePlaceholder
-              label="단지배치도 (이미지 교체 예정)"
-              aspect="aspect-[16/9]"
+            <Image
+              src="/images/community-info.jpg"
+              alt="상동역 롯데캐슬 시그니처 단지구성 안내"
+              width={1160}
+              height={3479}
+              sizes="100vw"
+              className="w-full h-auto"
+              priority
             />
           </div>
 
