@@ -61,10 +61,10 @@ export default function DirectionsPage() {
               견본주택(예정): 추후 안내
             </p>
             <Image
-              src="/images/directions-map.jpg"
+              src="/images/directions-map.png"
               alt="상동역 롯데캐슬 시그니처 견본주택 위치 안내"
-              width={560}
-              height={440}
+              width={1414}
+              height={1112}
               sizes="100vw"
               className="w-full h-auto"
               priority
