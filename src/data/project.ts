@@ -21,7 +21,7 @@ export const projectInfo = {
   saleDate: "2026년 08월 예정",
   saleDateShort: "2026.08",   // 히어로 섹션 스펙 표시용
   scaleShort: "B8~49F",       // 히어로 섹션 스펙 표시용
-  moveInDate: "추후 공개",
+  moveInDate: "2032년 예정",
   parking: "3,455대 (법정 2,732대)",
   totalFloorArea: "약 46만 5,992㎡",
   subwayLine: "7호선 상동역",
