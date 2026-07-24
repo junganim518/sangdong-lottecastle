@@ -13,6 +13,19 @@ export function Location() {
           dark
         />
 
+        {/* 입지 안내 이미지 — 전체 너비, 원본 비율 그대로 (세로로 긴 이미지) */}
+        <div className="mt-14">
+          <Image
+            src="/images/location-info.jpg"
+            alt="상동역 롯데캐슬 시그니처 입지 안내도"
+            width={1160}
+            height={2294}
+            sizes="100vw"
+            className="w-full h-auto"
+            priority
+          />
+        </div>
+
         {/* 지도 — 풀 너비, 와이드 비율 */}
         <div className="mt-14">
           {locationInfo.mapEmbedSrc ? (
