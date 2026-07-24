@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { contactInfo } from "@/data/project";
 
 const transitPoints = [
@@ -55,11 +55,19 @@ export default function DirectionsPage() {
             description="모델하우스 위치 및 방문 안내입니다. 오픈 일정과 정확한 주소는 확정 즉시 업데이트됩니다."
           />
 
-          {/* 지도 자리 */}
+          {/* 견본주택 위치 안내 이미지 */}
           <div className="mt-14">
-            <ImagePlaceholder
-              label="모델하우스 약도 / 지도 (확정 후 업데이트 예정)"
-              aspect="aspect-[16/7]"
+            <p className="text-sm tracking-eyebrow uppercase text-gold mb-3">
+              견본주택(예정): 추후 안내
+            </p>
+            <Image
+              src="/images/directions-map.jpg"
+              alt="상동역 롯데캐슬 시그니처 견본주택 위치 안내"
+              width={560}
+              height={440}
+              sizes="100vw"
+              className="w-full h-auto"
+              priority
             />
           </div>
 
